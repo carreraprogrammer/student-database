@@ -1,5 +1,9 @@
 /* Populate database with sample data. */
 
-INSERT INTO animals (name) VALUES ('Luna');
-INSERT INTO animals (name) VALUES ('Daisy');
-INSERT INTO animals (name) VALUES ('Charlie');
+INSERT INTO majors(major) VALUES('Database Administration');
+
+INSERT INTO courses(course) VALUES('Data Structures and Algorithms');
+
+INSERT INTO majors_courses(major_id, course_id) VALUES(1, 1);
+
+INSERT INTO students(first_name, last_name, major_id, gpa) VALUES('Rhea', 'Kellems', 1, 2.5);
