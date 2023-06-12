@@ -41,3 +41,4 @@ ALTER TABLE majors_courses ADD COLUMN course_id INT;
 ALTER TABLE majors_courses ADD FOREIGN KEY(course_id) REFERENCES courses(course_id);
 
 ALTER TABLE majors_courses ADD PRIMARY KEY(major_id, course_id);
+
